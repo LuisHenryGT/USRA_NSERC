@@ -2,4 +2,4 @@ Work conducted  during the summer of 2020 as part of a USRA NSERC grant to devel
 
 A .m file for matlab code
 and
-a . S file for simulink code are available
+a . slk file for simulink code are available
