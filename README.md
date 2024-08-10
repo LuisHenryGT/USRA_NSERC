@@ -1,7 +1,7 @@
 # 10 DOF C-Arm and Table: An Integrated Model
 
 ## Overview
-This project was conducted during the summer of 2020 as part of a USRA NSERC grant. The aim was to develop a mathematical model of a C-Arm and a table with 10 Degrees of Freedom (DOF). 
+This project was conducted during the summer of 2020 as part of an USRA NSERC grant. The aim was to develop a mathematical model of a C-Arm and a table with 10 Degrees of Freedom (DOF). 
 
 ## Files
 - **Matlab Code (.m file):** Contains the core mathematical model and simulation scripts.
