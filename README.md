@@ -28,4 +28,4 @@ This model was created to simulate the complex movements and interactions of a C
 
 ## Acknowledgments
 - **Natural Sciences and Engineering Research Council of Canadas:** For the financial support through the Undergraduate Student Research Awards during the summer of 2020.
-- **University of Ottawa/Dr. Pascal Fallavollita:** For providing the support needed and resources needed for this project.
+- **University of Ottawa/Dr. Pascal Fallavollita:** For providing the support and resources needed for this project.
