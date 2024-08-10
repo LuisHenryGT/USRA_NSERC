@@ -1,18 +1,42 @@
-		KINEMATIC MODEL OF C-ARM AND TABLE (10DOF)
+# Kinematic Model of C-Arm and Table (10 DOF)
 
-1. Install Matlab[1] and the Robotics System Toolbox[2] 
+## Overview
+This repository contains a MATLAB implementation of a kinematic model for a C-Arm and Table system with 10 Degrees of Freedom (DOF). The model is based on the Siemens Cios Alpha mobile C-Arm and the Siemens Artis OR Table.
 
-2. Open the Carm_table_10DOF.m file
+## Requirements
+- [MATLAB](https://www.mathworks.com/products/matlab.html)
+- [Robotics System Toolbox](https://www.mathworks.com/help/robotics/)
 
-3. Carm_table_10_dof.m file is divide into 3 sections, the first section is the model of the C-Arm and table
-represented as a rigid body tree model. The C-Arm model is based on Siemens Cios Alpha mobile C-Arm.
-The table is modeled on the Siemens Artis OR Table. More info on rigid body tree model at https://www.mathworks.com/help/robotics/ug/rigid-body-tree-robot-model.html
+## Getting Started
+1. **Install Prerequisites:** Ensure you have MATLAB and the Robotics System Toolbox installed.
+2. **Open the Code:** Launch the `Carm_table_10DOF.m` file in MATLAB.
 
-4. The second section is the forward kinematics of the model. The inputs are the 10 parameters of the configuration for the 10 DOF. The output would be fktform as the homogeneous transformation matrix between the CArm end-effector and the Table end-effector wich is the common origne frame in our model. fk_Rotation_ZYX is the vector row of the Euler angles (Z,Y,X) in degrees. And the translation in x,y, and z is also available.
+## Code Structure
+The `Carm_table_10DOF.m` file is organized into three main sections:
 
-5. The third section is the inverse kinematics of the model. The inputs are the desired translation and rotation in meters and radians. The output is a struct array named configSoln with the 10 joint values. The homogeneous transformation matrix and Euler angles can also be output to confirm and describe the solution of the solver. The algorithm used for solving inverse kinematics is BFGSGradientProjection but LevenbergMarquardt can also be used
+### 1. Rigid Body Tree Model
+- The first section creates the kinematic model of the C-Arm and Table using a rigid body tree representation.
+- The C-Arm model is based on the Siemens Cios Alpha, and the table is modeled on the Siemens Artis OR Table.
+- For more details on rigid body tree models, refer to the [MathWorks documentation](https://www.mathworks.com/help/robotics/ug/rigid-body-tree-robot-model.html).
 
-6. All variable can be visualised in the Matlab Workspace
+### 2. Forward Kinematics
+- This section computes the forward kinematics of the model.
+- **Inputs:** The 10 parameters defining the configuration of the 10 DOF.
+- **Outputs:**
+  - `fktform`: The homogeneous transformation matrix between the C-Arm end-effector and the Table end-effector, which serves as the common origin frame in this model.
+  - `fk_Rotation_ZYX`: The Euler angles (Z, Y, X) in degrees.
+  - Translation values in `x`, `y`, and `z`.
 
-[1]: https://www.mathworks.com/products/matlab.html
-[2]: https://www.mathworks.com/help/robotics/
+### 3. Inverse Kinematics
+- This section solves the inverse kinematics of the model.
+- **Inputs:** The desired translation (in meters) and rotation (in radians).
+- **Outputs:**
+  - `configSoln`: A struct array containing the 10 joint values.
+  - The homogeneous transformation matrix and Euler angles, for validating the solution.
+- **Algorithm:** The default solver is `BFGSGradientProjection`, but `LevenbergMarquardt` can also be used.
+
+## Visualization
+- All variables and results can be visualized in the MATLAB Workspace.
+- 
+## Acknowledgments
+This work was conducted during the summer of 2020 as part of a USRA NSERC grant.
