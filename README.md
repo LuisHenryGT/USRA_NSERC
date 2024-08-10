@@ -27,5 +27,5 @@ To get started with the project, you can download the Matlab and Simulink files 
 This model was created to simulate the complex movements and interactions of a C-Arm and an adjustable table, accounting for 10 DOF
 
 ## Acknowledgments
-- **Natural Sciences and Engineering Research Council of Canadas:** For the financial support through the Undergraduate Student Research Awards during the summer of 2020.
+- **Natural Sciences and Engineering Research Council of Canada:** For the financial support through the Undergraduate Student Research Awards during the summer of 2020.
 - **University of Ottawa/Dr. Pascal Fallavollita:** For providing the support and resources needed for this project.
