@@ -40,5 +40,7 @@ The `Carm_table_10DOF.m` file is organized into three main sections:
 
 ![3D Visualization](3d_visualization.png)
 
+![3D Overlap](Overlap_kinematic_and_model.png)
+
 ## Acknowledgments
 This work was conducted during the summer of 2020 as part of a USRA NSERC grant.
