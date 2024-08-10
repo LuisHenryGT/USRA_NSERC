@@ -36,7 +36,9 @@ The `Carm_table_10DOF.m` file is organized into three main sections:
 - **Algorithm:** The default solver is `BFGSGradientProjection`, but `LevenbergMarquardt` can also be used.
 
 ## Visualization
-- All variables and results can be visualized in the MATLAB Workspace.
-- 
+- All variables and results can be visualized in the 3D graph MATLAB Workspace as shown below:
+
+![3D Visualization](3d_visualization.png)
+
 ## Acknowledgments
 This work was conducted during the summer of 2020 as part of a USRA NSERC grant.
