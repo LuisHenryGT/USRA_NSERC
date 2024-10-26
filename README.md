@@ -1,5 +1,5 @@
 # 10 DOF C-Arm and Table: An Integrated Model
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4926654.svg)](https://doi.org/10.5281/zenodo.4926654)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.13293121.svg)](https://doi.org/10.5281/zenodo.13293121)
 ## Overview
 This project was conducted during the summer of 2020 as part of an USRA NSERC grant. The aim was to develop a mathematical model of a C-Arm and a table with 10 Degrees of Freedom (DOF). 
 
